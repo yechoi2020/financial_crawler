@@ -2,7 +2,7 @@ import time
 import random
 import pywinmacro as pw
 
-search_location = (233,135)
+search_location = (176, 72)
 historical_location = (309,538)
 download_location = (618, 704)
 
@@ -11,7 +11,6 @@ stocks = ["AMZN", "AAPL", "GS", "MS"]
 
 def price(ticker):
     pw.click(search_location)
-    time.sleep(random.random())
     pw.type_in("https://finance.yahoo.com/quote/")
     time.sleep(random.random())
     pw.type_in(ticker)
